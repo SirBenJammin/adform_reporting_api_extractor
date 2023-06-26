@@ -1,0 +1,286 @@
+{
+	"requests": [
+		{
+			"dimensions": [
+				"clientID",
+				"date",
+				"campaignID",
+				"orderID",
+				"lineItemID",
+				"bannerID",
+				"environmentType",
+				"campaignCurrency"
+			],
+			"metrics": [
+				{
+					"metric": "impressions"
+				},
+				{
+					"metric": "impressions",
+					"specs": {
+						"adUniqueness": "campaignUnique"
+					}
+				},
+				{
+					"metric": "impressions",
+					"specs": {
+						"adUniqueness": "bannerUnique"
+					}
+				},
+				{
+					"metric": "measurableImpressions"
+				},
+				{
+					"metric": "viewImpressionsIAB"
+				},
+				{
+					"metric": "clicks"
+				},
+				{
+					"metric": "cost"
+				},
+				{
+					"metric": "cost",
+					"specs": {
+						"costType": "rtb"
+					}
+				}
+			],
+			"filter": {
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"client": ""
+			},
+			"includeRowCount": "false",
+			"includeTotals": "false",
+			"headers": [               
+                "account_id",
+                "date",
+                "campaign_id",
+                "order_id",
+                "line_item_id",
+                "ad_id",
+                "environment_type",
+				"currency",
+                "impressions",
+                "unique_campaign_impressions",
+                "unique_banner_impressions",
+                "measurable_impressions",
+                "viewable_impressions",
+                "clicks",
+                "cost",
+                "rtb_cost"
+            ],
+			"file_name": "out/tables/adform_insights_1.csv",
+			"level": "insights_1"
+		},
+		{
+			"dimensions": [
+				"clientID",
+				"date",
+				"campaignID",
+				"orderID",
+				"lineItemID",
+				"bannerID",
+				"environmentType",
+				"campaignCurrency"
+			],
+			"metrics": [
+				{
+					"metric": "conversions"
+				},
+				{
+					"metric": "conversions",
+					"specs": {
+						"conversionType": "conversionType1"
+					}
+				},
+				{
+					"metric": "conversions",
+					"specs": {
+						"conversionType": "conversionType2"
+					}
+				},
+				{
+					"metric": "conversions",
+					"specs": {
+						"conversionType": "conversionType3"
+					}
+				},
+				{
+					"metric": "conversions",
+					"specs": {
+						"conversionType": "conversionType1",
+						"adInteraction": "postClick"
+					}
+				},
+				{
+					"metric": "conversions",
+					"specs": {
+						"conversionType": "conversionType2",
+						"adInteraction": "postClick"
+					}
+				},
+				{
+					"metric": "conversions",
+					"specs": {
+						"conversionType": "conversionType3",
+						"adInteraction": "postClick"
+					}
+				},
+				{
+					"metric": "conversions",
+					"specs": {
+						"conversionType": "conversionType1",
+						"adInteraction": "postImpression"
+					}
+				},
+				{
+					"metric": "conversions",
+					"specs": {
+						"conversionType": "conversionType2",
+						"adInteraction": "postImpression"
+					}
+				},
+				{
+					"metric": "conversions",
+					"specs": {
+						"conversionType": "conversionType3",
+						"adInteraction": "postImpression"
+					}
+				}
+			],
+			"filter": {
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"client": ""
+			},
+			"includeRowCount": "false",
+			"includeTotals": "false",
+			"headers": [
+                "account_id",
+                "date",
+                "campaign_id",
+                "order_id",
+                "line_item_id",
+                "ad_id",
+                "environment_type",				
+				"currency",
+                "conversions",
+                "registration_conversions",
+                "first_deposit_conversions",
+                "further_deposit_conversions",
+                "registration_post_click_conversions",
+				"first_deposit_post_click_conversions",
+				"further_deposit_post_click_conversions",
+                "registration_post_view_conversions",
+				"first_deposit_post_view_conversions",
+				"further_deposit_post_view_conversions"
+            ],
+			"file_name": "out/tables/adform_insights_2.csv",
+			"level": "insights_2"
+		},
+		{
+			"dimensions": [
+				"clientID",
+				"date",
+				"campaignID",
+				"orderID",
+				"lineItemID",
+				"bannerID",
+				"environmentType",				
+				"campaignCurrency"
+			],
+			"metrics": [
+				{
+					"metric": "conversions",
+					"specs": {
+						"adInteraction": "postClick"
+					}
+				},
+				{
+					"metric": "conversions",
+					"specs": {
+						"adInteraction": "postImpression"
+					}
+				}
+			],
+			"filter": {
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"client": ""
+			},
+			"includeRowCount": "false",
+			"includeTotals": "false",
+			"headers": [
+                "account_id",
+                "date",
+                "campaign_id",
+                "order_id",
+                "line_item_id",
+                "ad_id",
+                "environment_type",
+				"currency",
+                "post_click_conversions",
+                "post_view_conversions"
+            ],
+			"file_name": "out/tables/adform_insights_3.csv",
+			"level": "insights_3"
+		},
+		{
+			"dimensions": [
+				"clientID",
+				"date",
+				"campaignID",
+				"orderID",
+				"lineItemID",
+				"bannerID",				
+				"campaignCurrency"
+			],
+			"metrics": [
+				{
+					"metric": "rtbMediaCost"
+				},
+				{
+					"metric": "dmpDspDataCost"
+				},
+				{
+					"metric": "videoPlayStartCount"
+				},
+				{
+					"metric": "videoCompleteCount"
+				}
+			],
+			"filter": {
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"client": ""
+			},
+			"includeRowCount": "false",
+			"includeTotals": "false",
+			"headers": [
+                "account_id",
+                "date",
+                "campaign_id",
+                "order_id",
+                "line_item_id",
+                "ad_id",                
+				"currency",
+                "rtb_media_cost",
+				"dmp_data_cost",
+                "video_start",
+                "video_complete"
+            ],
+			"file_name": "out/tables/adform_insights_4.csv",
+			"level": "insights_4"
+		}
+	]
+}
